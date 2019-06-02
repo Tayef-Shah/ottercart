@@ -1,12 +1,16 @@
-var shipping_address = new google.maps.LatLng(55.930385, -3.118425);
-var dist_centre1 = new google.maps.LatLng(50.087692, 14.421150);
-var dist_centre2 = new google.maps.LatLng(50.087692, 14.421150);
-var dist_centre3 = new google.maps.LatLng(50.087692, 14.421150);
+var json = require('./centres.json');
+
+var shipping_address;
+var dist_centre = String[3];
+dist_centre[0] = json.originAddresses[0];
+dist_centre[1] = json.originAddresses[1];
+dist_centre[2] = json.originAddresses[2];
+
 
 var service = new google.maps.DistanceMatrixService();
 service.getDistanceMatrix(
   {
-    origins: [dist_centre1, dist_centre2, dist_centre3],
+    origins: [dist_centre[0], dist_centre[1], dist_centre[2]],
     destinations: [shipping_address],
     travelMode: 'DRIVING',
     //drivingOptions: DrivingOptions, could provide driving details to give range on estimate
