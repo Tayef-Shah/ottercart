@@ -1,16 +1,7 @@
-{ "centres":
-    [
-        {
-        "name": "YYZ4",
-        "address": "8050 Heritage Rd, Brampton, ON L6Y 0C9"
-    },
-    {
-        "name": "YYZ3" ,
-        "address": "7995 Winston Churchill Blvd, Brampton, ON L6Y 5Z4"
-    },
-    {
-        "name": "YYZ1" ,
-        "address": "6363 Millcreek Dr, Mississauga, ON L5N 1L8"
-    }
-]
+{
+"origin_addresses": [
+    "8050, Heritage, Road, Brampton, ON", 
+    "7995, Winston, Churchill, Boulevard, Brampton, ON",
+    "6363, Millcreek, Drive, Mississauga, ON"]
 }
+
