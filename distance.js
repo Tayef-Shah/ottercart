@@ -1,12 +1,9 @@
-var json = require('./centres.json');
-const GOOGLE_API_KEY = "AIzaSyAnjUvZEKiJGuEyAb_Kow4i3TSRicYVu0U";
+var dist_centre = [
+    "8050, Heritage, Road, Brampton, ON", 
+    "7995, Winston, Churchill, Boulevard, Brampton, ON",
+    "6363, Millcreek, Drive, Mississauga, ON"];
 
 var shipping_address;
-var dist_centre = String[3];
-dist_centre[0] = json.originAddresses[0];
-dist_centre[1] = json.originAddresses[1];
-dist_centre[2] = json.originAddresses[2];
-
 
 var service = new google.maps.DistanceMatrixService();
 service.getDistanceMatrix(
