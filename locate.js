@@ -3,14 +3,15 @@ const GOOGLE_API_KEY = "AIzaSyAnjUvZEKiJGuEyAb_Kow4i3TSRicYVu0U";
 function locate(){
     console.log('working');
     if (navigator.geolocation) {
+        var location
         navigator.geolocation.getCurrentPosition(function(position) {
           var pos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude
           };
+          location = new google.maps.LatLng(pos.lat, pos.lng);
         })
         console.log("Successful location retireival")
-        var location = new google.maps.LatLng(pos.lat, pos.lng);
         return location;
     }
     else {
