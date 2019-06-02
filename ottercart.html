@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Otter Cart</title>
+
     <script type="text/javascript" src="ottercart.js"></script>
+    <script src="locate.js"></script>
+    <script src="distance.js" shipping_address={location}></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnjUvZEKiJGuEyAb_Kow4i3TSRicYVu0U&callback=initMap">
+    </script>
+
     <link rel="stylesheet" href="ottercart.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
   </head>
@@ -32,14 +39,8 @@
             <button type="button" name="share-button" onclick="locate()">Share</button>
       </div>
     </main>
-<footer>
-</footer>
+    <footer>
+    </footer>
     </div>
-    <script src="locate.js"></script>
-    <script type="text/javascript" src="distance.js" shipping_address={location}></script>
-    <script async defer
-    const GOOGLE_API_KEY = "AIzaSyAnjUvZEKiJGuEyAb_Kow4i3TSRicYVu0U";
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnjUvZEKiJGuEyAb_Kow4i3TSRicYVu0U&callback=initMap">
-    </script>
   </body>
 </html>

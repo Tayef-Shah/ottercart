@@ -1,4 +1,5 @@
 var json = require('./centres.json');
+const GOOGLE_API_KEY = "AIzaSyAnjUvZEKiJGuEyAb_Kow4i3TSRicYVu0U";
 
 var shipping_address;
 var dist_centre = String[3];
@@ -31,9 +32,9 @@ service.getDistanceMatrix(
             element = results[j];
             var distance = element.distance.value;
             distances[j] = distance;
-            var duration = element.duration.value;
-            var from = origins[j];
-            var to = destinations[0];
+            // var duration = element.duration.value;
+            // var from = origins[j];
+            // var to = destinations[0];
 
             if(distances[j] < min){
                 min = distances[j];
