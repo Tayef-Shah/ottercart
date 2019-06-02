@@ -48,6 +48,8 @@
             };
           })
           console.log("Successful location retireival")
+          var location = new google.maps.LatLng(pos.lat, pos.lng);
+          return location;
       }
       else {
         handleLocationError();
@@ -58,10 +60,10 @@
         console.log('Error: Your browser doesn\'t support geolocation.');
       }
     </script>
+    <script type="text/javascript" src="distance.js" shipping_address={location}></script>
     <script async defer
     const GOOGLE_API_KEY = "AIzaSyAnjUvZEKiJGuEyAb_Kow4i3TSRicYVu0U";
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnjUvZEKiJGuEyAb_Kow4i3TSRicYVu0U&callback=initMap">
     </script>
-    <script type='text/javascript' src='distance.js' ></script>
   </body>
 </html>
