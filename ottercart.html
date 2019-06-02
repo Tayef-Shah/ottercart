@@ -30,15 +30,20 @@
   <p>1.8kg Co2e</p>
   <p>Trees saved</p>
   <p>-15</p>
-  <button type="button" name="share-button">Share</button>
+  <button type="button" name="share-button" onclick="locate()">Share</button>
   </div>
-
+  <script>
+    function locate(){
+      console.log("Locate");
+    }
+  </script>
 </main>
 <footer>
 
 </footer>
     </div>
     <script>
+      function locate(){
       console.log('working');
       if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
@@ -54,6 +59,7 @@
       else {
         handleLocationError();
       }
+    }
 
       function handleLocationError(){
         console.log('Error: The Geolocation service failed.');
