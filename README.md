@@ -6,3 +6,6 @@
 [Geocoding service](https://developers.google.com/maps/documentation/javascript/geocoding)
 ##Amazon Customer Profile LWA
 [Customer Profile](https://developer.amazon.com/docs/login-with-amazon/customer-profile.html)
+
+##Testing
+[Chrome extentions management page](chrome://extensions)
