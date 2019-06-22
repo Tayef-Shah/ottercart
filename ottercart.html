@@ -58,6 +58,7 @@
                 <p id="trees-saved-input">1.8kg Co2e</p>
               </div>
               <div class="grid-10">
+                <!-- I don't think a button should be a direct child on a paragraph-->
                 <p><button>Share</button></p>
               </div>
             </div>
@@ -65,12 +66,36 @@
         </div> <!--end of container-->
         <div class="info-graphic">
           <div class="grid-container3">
-            <div class="grid-11"><ul><li>Four-day</li></ul></div>
-            <div class="grid-12 no-list-style"><ul><li>8 lbs in Co2</li></ul></div>
-            <div class="grid-13"><ul><li>Two-day</li></ul></div>
-            <div class="grid-14 no-list-style"><ul><li>10 lbs in Co2</li></ul></div>
-            <div class="grid-15"><ul><li>Next-day</li></ul></div>
-            <div class="grid-16 no-list-style"><ul><li>50 lbs in Co2</li></ul></div>
+            <div class="grid-11">
+              <ul>
+                <li>Four-day</li>
+              </ul>
+            </div>
+            <div class="grid-12 no-list-style">
+              <ul>
+                <li>8 lbs in Co2</li>
+              </ul>
+            </div>
+            <div class="grid-13">
+              <ul>
+                <li>Two-day</li>
+              </ul>
+            </div>
+            <div class="grid-14 no-list-style">
+              <ul>
+                <li>10 lbs in Co2</li>
+              </ul>
+            </div>
+            <div class="grid-15">
+              <ul>
+                <li>Next-day</li>
+              </ul>
+            </div>
+            <div class="grid-16 no-list-style">
+              <ul>
+                <li>50 lbs in Co2</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="image-slideshow">
@@ -97,35 +122,7 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
-    
-          <script>
-            var index = 1;
-            showSlides(index);
-
-            function plusSlides(n) {
-              showSlides(index += n);
-            }
-
-            function currentSlide(n) {
-              showSlides(index = n);
-            }
-
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("slides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {index = 1}
-              if (n < 1) {index = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[index-1].style.display = "block";
-              dots[index-1].className += " active";
-            }
-          </script>
+          <script src="slides.js"></script>
         </div>
         <div class="info-graphic">
           <h1>Estimated Total-Carbon Footprint</h1>
