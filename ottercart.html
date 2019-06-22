@@ -14,124 +14,178 @@
     <link rel="stylesheet" href="ottercart/css/ottercart.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
   </head>
-   <body>
-    <div class="container">
-
-<header>
-  <div class="header">
-  <a class="logo">Otter Cart</a>
-  <div class="header-right">
-  <img src="assets/images/ottercarticon.png" alt="">
-  </div>
-</div>
-</header>
-<main>
-  <div class="info-card">
-      <div class="horizontal-line">
-        <div class="grid-container">
-          <div class="grid-1"><h1>SFO</h1></div>
-          <div class="grid-2">  <p>--- <img src="assets/images/ic_local_shipping_24px.png" alt=""> ---</p></div>
-          <div class="grid-3"><h1>YYZ</h1></div>
-          <div class="grid-4"><p>San Francisco, USA</p></div>
-          <div class="grid-5"></div>
-        <div class="grid-6"><p>Toronto, Canada</p></div>
+    <body>
+      <div class="container">
+        <header>
+          <div class="header">
+            <a class="logo">Otter Cart</a>
+              <div class="header-right">
+                <img src="assets/images/ottercarticon.png" alt="">
+              </div>
+          </div>
+        </header>
+        <main>
+          <div class="info-card">
+            <div class="horizontal-line">
+              <div class="grid-container">
+                <div class="grid-1">
+                  <h1>SFO</h1>
+                </div>
+                <div class="grid-2">  
+                  <p>--- <img src="assets/images/ic_local_shipping_24px.png" alt=""> ---</p>
+                </div>
+                <div class="grid-3">
+                  <h1>YYZ</h1>
+                </div>
+                <div class="grid-4">
+                  <p>San Francisco, USA</p>
+                </div>
+                <div class="grid-5"></div>
+              <div class="grid-6"><p>Toronto, Canada</p></div>
+            </div>
+          </div>
+          <div class="grid-part-2">
+            <div class="grid-container">
+              <div class="grid-7">  
+                <img src="assets/images/treeicon.png" alt="">
+              </div>
+              <div class="grid-8">
+                <p id="carbon-footprint">Carbon footprint</p>
+                <p id="carbon-footprint-input">1.8 kg Co2e</p>
+              </div>
+              <div class="grid-9">
+                <p id="trees-saved">Trees saved</p>
+                <p id="trees-saved-input">1.8kg Co2e</p>
+              </div>
+              <div class="grid-10">
+                <p><button>Share</button></p>
+              </div>
+            </div>
+          </div>
+        </div> <!--end of container-->
+        <div class="info-graphic">
+          <div class="grid-container3">
+            <div class="grid-11"><ul><li>Four-day</li></ul></div>
+            <div class="grid-12 no-list-style"><ul><li>8 lbs in Co2</li></ul></div>
+            <div class="grid-13"><ul><li>Two-day</li></ul></div>
+            <div class="grid-14 no-list-style"><ul><li>10 lbs in Co2</li></ul></div>
+            <div class="grid-15"><ul><li>Next-day</li></ul></div>
+            <div class="grid-16 no-list-style"><ul><li>50 lbs in Co2</li></ul></div>
+          </div>
         </div>
-      </div>
-    <div class="grid-part-2">
-    <div class="grid-container">
+        <div class="image-slideshow">
+          <div class="slideshow-container">
+            <div class="slides fade">
+              <img src="assets/images/oreo-got.jpg">
+            </div>
+            <div class="slides fade">
+              <img src="assets/images/season7.jpg">
+            </div>
+            <div class="slides fade">
+              <img src="assets/images/season8.jpg">
+            </div>
 
-      <div class="grid-7">  <img src="assets/images/treeicon.png" alt=""></div>
-      <div class="grid-8"><p id="carbon-footprint">Carbon footprint</p><p id="carbon-footprint-input">1.8 kg Co2e</p></div>
-      <div class="grid-9"><p id="trees-saved">Trees saved</p><p id="trees-saved-input">1.8kg Co2e</p></div>
-      <div class="grid-10"> <p><button>Share</button></p></div>
-    </div>
-  </div>
-</div>
-  <div class="info-graphic">
-  <div class="grid-container3">
-    <div class="grid-11"><ul><li>Four-day</li></ul></div>
-    <div class="grid-12 no-list-style"><ul><li>8 lbs in Co2</li></ul></div>
-    <div class="grid-13"><ul><li>Two-day</li></ul></div>
-    <div class="grid-14 no-list-style"><ul><li>10 lbs in Co2</li></ul></div>
-    <div class="grid-15"><ul><li>Next-day</li></ul></div>
-    <div class="grid-16 no-list-style"><ul><li>50 lbs in Co2</li></ul></div>
-  </div>
-</div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
 
-<div class="image-slideshow">
-  <div class="slideshow-container">
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    
+          <script>
+            var index = 1;
+            showSlides(index);
 
-    <div class="slides fade">
-      <img src="assets/images/oreo-got.jpg" style="width:100%">
-    </div>
+            function plusSlides(n) {
+              showSlides(index += n);
+            }
 
-    <div class="slides fade">
-      <img src="assets/images/season7.jpg" style="width:100%">
-    </div>
+            function currentSlide(n) {
+              showSlides(index = n);
+            }
 
-    <div class="slides fade">
-      <img src="assets/images/season8.jpg" style="width:100%">
-    </div>
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-  <script>
-var index = 1;
-showSlides(index);
-
-function plusSlides(n) {
-  showSlides(index += n);
-}
-
-function currentSlide(n) {
-  showSlides(index = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {index = 1}
-  if (n < 1) {index = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[index-1].style.display = "block";
-  dots[index-1].className += " active";
-}
-</script>
-</div>
-<div class="info-graphic">
-  <h1>Estimated Total-Carbon Footprint</h1>
-<div class="grid-container4">
-  <div class="grid-17 no-list-style"><ul><li>Oreo GoT </li></ul></div>
-  <div class="grid-18 no-list-style"><ul><li><span class="circle "></span> <span class="circle "></span> <span class="circle"></span> <span class="circle faded"></span> <span class="circle faded"> </span></li></ul></div>
-  <div class="grid-19 no-list-style"><ul><li>GoT Season 7</li></ul></div>
-  <div class="grid-20 no-list-style"><ul><li><span class="circle2"></span> <span class="circle2 "></span> <span class="circle2 faded"></span> <span class="circle2 faded"></span> <span class="circle2 faded"> </span></li></ul></div>
-  <div class="grid-21 no-list-style"><ul><li>GoT Season 8</li></ul></div>
-  <div class="grid-22 no-list-style"><ul><li><span class="circle3 "></span> <span class="circle3 "></span> <span class="circle3 faded"></span> <span class="circle3 faded"></span> <span class="circle3 faded"> </span></li></ul></div>
-</div>
-</div>
-</main>
-<footer>
-
-</footer>
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("slides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {index = 1}
+              if (n < 1) {index = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[index-1].style.display = "block";
+              dots[index-1].className += " active";
+            }
+          </script>
+        </div>
+        <div class="info-graphic">
+          <h1>Estimated Total-Carbon Footprint</h1>
+          <div class="grid-container4">
+            <div class="grid-17 no-list-style">
+              <ul>
+                <li>Oreo GoT </li>
+              </ul>
+            </div>
+            <div class="grid-18 no-list-style">
+              <ul>
+                <li>
+                  <span class="circle "></span> 
+                  <span class="circle "></span> 
+                  <span class="circle"></span> 
+                  <span class="circle faded"></span> 
+                  <span class="circle faded"></span>
+                </li>
+              </ul>
+            </div>
+            <div class="grid-19 no-list-style">
+              <ul>
+                <li>GoT Season 7</li>
+              </ul>
+            </div>
+            <div class="grid-20 no-list-style">
+              <ul>
+                <li>
+                  <span class="circle2"></span>
+                  <span class="circle2 "></span>
+                  <span class="circle2 faded"></span>
+                  <span class="circle2 faded"></span>
+                  <span class="circle2 faded"></span>
+                </li>
+              </ul>
+            </div>
+            <div class="grid-21 no-list-style">
+              <ul>
+                <li>GoT Season 8</li>
+              </ul>
+            </div>
+            <div class="grid-22 no-list-style">
+              <ul>
+                <li>
+                  <span class="circle3 "></span>
+                  <span class="circle3 "></span>
+                  <span class="circle3 faded"></span>
+                  <span class="circle3 faded"></span>
+                  <span class="circle3 faded"> </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+      </footer>
     </div>
   </body>
-    </main>
-    </div>
-  </body>
+  </main>
+</div>
+</body>
 </html>

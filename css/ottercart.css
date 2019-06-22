@@ -212,6 +212,7 @@ h1, h2, h3, h4, h5, h6 {
 .slides img{
   border-radius: 20px;
   max-height: 380px;
+  width: 100%;
 }
 .image-slideshow{
   padding-top: 20px;
