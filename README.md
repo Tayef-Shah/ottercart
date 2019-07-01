@@ -16,6 +16,8 @@ In order to test the extension please download Google Chrome and update to the l
 ## Version Control Practices
 
 ## API Reference
+Refer to the links below to see the variety of API's Otter Cart uses to provide the unique service it does. 
+
 API to check for users location\
 [Geolocation](https://developers.google.com/maps/documentation/javascript/geolocation#DetectingUserLocation)\
 API to convert addresses into latitude and longtitude\
@@ -24,9 +26,10 @@ Amazon Customer Profile LWA\
 [Customer Profile](https://developer.amazon.com/docs/login-with-amazon/customer-profile.html)
 
 ### API Key Protection
+These are the following policies which are practiced by the Otter Cart developer team to ensure the security of the API keys used in the application.
 
 ## Testing
-Chrome extentions management page\
+Otter Cart is currently tested manually using the Chrome Extentions Management Page to load new versions onto the browser.
 1. Begin by opening a tab in Google Chrome and entering the line below into the search line\
 `chrome://extensions`
 2. Click the _load unpacked_ button near the top left corner of the page
