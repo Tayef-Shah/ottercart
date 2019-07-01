@@ -1,5 +1,3 @@
-const GOOGLE_API_KEY = "AIzaSyAnjUvZEKiJGuEyAb_Kow4i3TSRicYVu0U";
-
 function locate(){
     console.log('working');
     if (navigator.geolocation) {
