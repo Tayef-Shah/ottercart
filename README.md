@@ -6,14 +6,23 @@ However, there is strong evidence that suggests one very effective way to reduce
 
 This is why we started Otter Cart. We aim to reduce Amazons emissions from shippments by showing users a personalized calculation on the trees they can save by extending the shipping time on their Amazon order. With about **100 million active Amazon prime members** around the world, there is huge potential for Otter Cart to really help save the planet.
 
-## API to check for users location
+## Getting Started
+
+## Version Control Practices
+
+## API Reference
+API to check for users location\
 [Geolocation](https://developers.google.com/maps/documentation/javascript/geolocation#DetectingUserLocation)
-## API to convert addresses into latitude and longtitude
+API to convert addresses into latitude and longtitude\
 [Geocoding service](https://developers.google.com/maps/documentation/javascript/geocoding)
-## Amazon Customer Profile LWA
+Amazon Customer Profile LWA\
 [Customer Profile](https://developer.amazon.com/docs/login-with-amazon/customer-profile.html)
 
 ## Testing
 
 Chrome extentions management page\
+1. Begin by opening a tab in Google Chrome and entering the line below into the search line\
 chrome://extensions
+2. Click the _load unpacked_ button near the top left corner of the page
+3. Select the _ottercart_ directory from your file search
+4. Enable the extension in your browser by selecting the toggle in the bottom right corner of the extension card on the page
