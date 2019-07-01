@@ -18,12 +18,9 @@ In order to test the extension please download Google Chrome and update to the l
 ## API Reference
 Refer to the links below to see the variety of API's Otter Cart uses to provide the unique service it does. 
 
-API to check for users location\
-[Geolocation](https://developers.google.com/maps/documentation/javascript/geolocation#DetectingUserLocation)\
-API to convert addresses into latitude and longtitude\
-[Geocoding service](https://developers.google.com/maps/documentation/javascript/geocoding)\
-Amazon Customer Profile LWA\
-[Customer Profile](https://developer.amazon.com/docs/login-with-amazon/customer-profile.html)
+* API to check for users location - [Geolocation](https://developers.google.com/maps/documentation/javascript/geolocation#DetectingUserLocation)\
+* API to convert addresses into latitude and longtitude - [Geocoding service](https://developers.google.com/maps/documentation/javascript/geocoding)\
+* Amazon Customer Profile LWA - [Customer Profile](https://developer.amazon.com/docs/login-with-amazon/customer-profile.html)
 
 ### API Key Protection
 These are the following policies which are practiced by the Otter Cart developer team to ensure the security of the API keys used in the application.
