@@ -13,7 +13,11 @@ In order to test the extension please download Google Chrome and update to the l
 
 ### Steps to set up a development environment for Otter Cart
 
-> ... Coming soon ...
+1. Load git and navigate into your preferred directory using the command `cd <directory name>` 
+1. Copy the https address of the repository by clicking on the **clone or download** on the repository page on Git Hub
+1. In git use the command `git clone <insert https address here>` to save a copy of the repository
+1. Specify which remote repository will be used for network commands by using the command `git remote add origin <insert https address here>`
+1. Implement a remote tracking branch to create a direct link between your local branch and the remote branch by using the command `git branch --set-to <remote name>/<branch name> master`
 
 ## Version Control Practices
 
