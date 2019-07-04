@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9953e768.chunk.css",
+    "main.js": "/static/js/main.600f3c01.chunk.js",
+    "main.js.map": "/static/js/main.600f3c01.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.84e536ea.chunk.js": "/static/js/2.84e536ea.chunk.js",
+    "static/js/2.84e536ea.chunk.js.map": "/static/js/2.84e536ea.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.900671f90766c120c94946688d45c11d.js": "/precache-manifest.900671f90766c120c94946688d45c11d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9953e768.chunk.css.map": "/static/css/main.9953e768.chunk.css.map",
+    "static/media/carbonfootprintvisuallightgreen.eddf8f48.svg": "/static/media/carbonfootprintvisuallightgreen.eddf8f48.svg",
+    "static/media/forestimage.png": "/static/media/forestimage.974191ca.png",
+    "static/media/ottercartheaderlogo.png": "/static/media/ottercartheaderlogo.27434945.png",
+    "static/media/shoppingcart.png": "/static/media/shoppingcart.2d55e029.png"
+  }
+}
