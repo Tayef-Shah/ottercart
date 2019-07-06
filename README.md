@@ -14,14 +14,74 @@ In order to test the extension please download Google Chrome and update to the l
 ### Steps to set up a development environment for Otter Cart
 
 1. Load git and navigate into your preferred directory using the command `cd <directory name>` 
-1. Copy the https address of the repository by clicking on the **clone or download** on the repository page on Git Hub
-1. In git use the command `git clone <insert https address here>` to save a copy of the repository
-1. Specify which remote repository will be used for network commands by using the command `git remote add origin <insert https address here>`
-1. Implement a remote tracking branch to create a direct link between your local branch and the remote branch by using the command `git branch --set-to <remote name>/<branch name> master`
+1. Copy the https address of the repository by clicking on the **clone or download** on the repository page on GitHub
+1. In git use the command below to save a copy of the repository
+```
+git clone <insert https address here>
+```
+1. Specify which remote repository will be used for network commands by using the command 
+```
+git remote add origin <insert https address here>
+```
+1. Implement a remote tracking branch to create a direct link between your local branch and the remote branch by using the command 
+```
+git branch --set-to <remote name>/<branch name> master
+```
 
 ## Version Control Practices
+Before you begin making any changes to the program, ensure that you are on the branch you want to be making changes on. If you are about to switch branches, check if you have any unsaved and/or uncommitted changes on the current branch with `git status`. Always commit your changes before switching branches.
 
-> ... Coming Soon ...
+### Pushing changes
+1. Check for existing branches on your local
+```
+git branch
+```
+2. If the branch you want to work on is not on local, fetch it from the remote repository
+```
+git fetch
+```
+3. Checkout to the branch you would like to work on
+```
+git checkout <branch>
+```
+4. When you have done some work and are ready to add changes to the staging area specify the files to be added
+```
+git add <file>
+```
+Or you can add all changes with `git add .`
+5. Commit your changes and add a message
+```
+git commit -m "Your message goes here"
+```
+6. Push your changes to the upstream branch
+```
+git push
+```
+OR push them to a remote branch of your choice `git push <remote> <branch>`
+
+### Pulling Changes
+If there are new changes on the remote master branch, you'll want to update your local version of the project with those changes.
+
+1. Check which branch you are on with `git branch`, if you're not on master, checkout to it with the command below
+```
+git checkout master
+```
+2. Check for differences in your local master and the remote master
+```
+git status
+```
+3. Pull the changes from the upstream branch
+```
+git pull
+```
+4. If you are working on a different branch you'll want to update that branch with the new changes
+```
+git checkout <branch>
+```
+5. Merge from master to recieve the new updates
+```
+git merge master
+``` 
 
 ## API Reference
 Refer to the links below to see the variety of API's Otter Cart uses to provide the unique service it does. 
@@ -40,5 +100,5 @@ Otter Cart is currently tested manually using the Chrome Extentions Management P
 1. Begin by opening a tab in Google Chrome and entering the line below into the search line\
 `chrome://extensions`
 2. Click the _load unpacked_ button near the top left corner of the page
-3. Select the _ottercart_ directory from your file search
+3. Select the _ottercart/build_ directory from your file search
 4. Enable the extension in your browser by selecting the toggle in the bottom right corner of the extension card on the page
