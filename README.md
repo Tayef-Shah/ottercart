@@ -48,7 +48,7 @@ git checkout <branch>
 ```
 git add <file>
 ```
-Or you can add all changes with `git add .`
+Or you can add all changes with `git add .`\
 5. Commit your changes and add a message
 ```
 git commit -m "Your message goes here"
@@ -99,6 +99,6 @@ These are the following policies which are practiced by the Otter Cart developer
 Otter Cart is currently tested manually using the Chrome Extentions Management Page to load new versions onto the browser.
 1. Begin by opening a tab in Google Chrome and entering the line below into the search line\
 `chrome://extensions`
-2. Click the _load unpacked_ button near the top left corner of the page
-3. Select the _ottercart/build_ directory from your file search
+2. Click the **load unpacked** button near the top left corner of the page
+3. Select the `ottercart/build` directory from your file search
 4. Enable the extension in your browser by selecting the toggle in the bottom right corner of the extension card on the page
