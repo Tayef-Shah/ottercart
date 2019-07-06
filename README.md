@@ -44,11 +44,10 @@ git fetch
 ```
 git checkout <branch>
 ```
-4. When you have done some work and are ready to add changes to the staging area specify the files to be added
+4. When you have done some work and are ready to add changes to the staging area specify the files to be added. Or you can add all changes with `git add .`
 ```
 git add <file>
 ```
-Or you can add all changes with `git add .`\
 5. Commit your changes and add a message
 ```
 git commit -m "Your message goes here"
