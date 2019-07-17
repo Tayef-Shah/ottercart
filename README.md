@@ -9,7 +9,7 @@ This is why we started Otter Cart. We aim to reduce Amazons emissions from shipp
 ## Getting Started
 Before you begin, ensure you have a version of git installed on your local machine by entering `git --version` in your command line (PC) or terminal (Mac). If there is no version that shows, install git before proceeding. You can find instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-You must also have a recent version of the node package manager (npm) installed on your machine. You can find instructions to download npm [here](https://www.npmjs.com/get-npm)
+You must also have a recent version of the node package manager (npm) installed on your machine. Check the npm version on your machine with `npm -v` or `npm --version`. If you do not have any version of npm, you can find instructions to download npm [here](https://www.npmjs.com/get-npm)
 
 In order to test the extension please download Google Chrome and update to the latest version.
 
